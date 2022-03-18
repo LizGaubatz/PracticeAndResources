@@ -1,0 +1,14 @@
+{
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "jsx": "react",
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "strict": true,
+    "sourceMap": true,
+    "declarationDir": "dist",
+    "declaration": true
+  },
+  "exclude": ["node_modules", "./src/**/*.spec.ts", "./src/**/*.spec.tsx"]
+}

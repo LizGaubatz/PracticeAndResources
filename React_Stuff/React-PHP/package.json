@@ -1,0 +1,30 @@
+{
+  "name": "react-php",
+  "version": "1.0.0",
+  "description": "Node.js Rest Apis with Express, Sequelize & MySQL",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\u0016nodejs",
+    "express",
+    "sequelize",
+    "mysql",
+    "rest",
+    "api"
+  ],
+  "author": "Liz Gaubatz",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "bootstrap": "^5.1.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mssql": "^8.0.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "react-router-dom": "^6.2.2",
+    "sequelize": "^6.17.0"
+  }
+}
