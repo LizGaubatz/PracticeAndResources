@@ -4,11 +4,11 @@ import axios from 'axios'
 
 const SearchBooks = () => {
     const [book, setBook] = useState({ items: [] })
-    const [ISPN, setISPN] = useState("")
+    const [ISBN, setISBN] = useState("")
     let URL = `https://www.googleapis.com/books/v1/volumes`
 
     const fetchBooks = async () => {
-        const response = await axios.get(`${URL}?q=${ISPN}`);
+        const response = await axios.get(`${URL}?q=${ISBN}`);
         setBook(response.data)
     }
 
@@ -21,7 +21,7 @@ const SearchBooks = () => {
         <div>
             <form onSubmit={onSubmitHandler}>
                 <label>Search for book:</label>
-                <input onChange={e => setISPN(e.target.value)} type="search" value={ISPN}></input>
+                <input onChange={e => setISBN(e.target.value)} type="search" value={ISBN}></input>
                 <button>Search</button>
             </form>
             <ul>
